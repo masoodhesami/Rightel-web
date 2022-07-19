@@ -15,25 +15,25 @@ const NavItems = () => {
         >
             <GridItem boxShadow='base' rounded={'sm'} pl='1' pr={'1'} bg='#EEE3EE' area={'header'}>
                 <Grid color={'#6A6767'} pt={'1'} fontSize={{ base: 'sm', md: "sm", lg: "sm", sm: '10px' }} fontWeight={'light'} textAlign={'center'} templateColumns='repeat(8, 1fr)' gap={3}>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}> محصولات</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}>  خدمات و سرگرمی</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}>  طرح‌ها و پیشنهادات</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}> ثبت نام و خرید</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}>  رایتل من</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}> درباره رایتل</Text>
                     </GridItem>
-                    <GridItem _hover={{ cursor: "pointer", bg: '#fff', rounded: "md" }} w='100%' h='8'>
+                    <GridItem _hover={{ cursor: "pointer", bg: '#902070', color: '#fff', rounded: "md" }} w='100%' h='8'>
                         <Text pt={'2'}> راهنما</Text>
                     </GridItem>
                     <GridItem _hover={{ cursor: "pointer" }} w='100%' h='8'>

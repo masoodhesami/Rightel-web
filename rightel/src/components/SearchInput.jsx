@@ -9,7 +9,7 @@ const SearchInput = () => {
                     pointerEvents='none'
                     children={<SearchIcon color='gray.500' />}
                 />
-                <Input color={'gray.500'} bg={'#EEE3EE'} borderRadius={"32"} type='tel' placeholder='جستجو' />
+                <Input fontSize={'sm'} color={'gray.500'} bg={'#EEE3EE'} borderRadius={"32"} type='tel' placeholder='جستجو' />
             </InputGroup>
         </Box>
     );
