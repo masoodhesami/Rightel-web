@@ -1,5 +1,5 @@
 import { Slide } from 'react-slideshow-image';
-import { Box } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons'
 import 'react-slideshow-image/dist/styles.css'
 
@@ -22,6 +22,10 @@ const slideImages = [
         url: 'https://s25.picofile.com/file/8451669192/bg_free_call.png',
 
     },
+    {
+        url: 'https://s25.picofile.com/file/8451674918/_1pDJfhdB.png',
+
+    }
 ];
 const SlideShow = () => {
 
@@ -30,10 +34,9 @@ const SlideShow = () => {
             <div className="slide-container">
                 <Slide {...properties}>
                     {slideImages.map((slideImage, index) => (
-                        <div className="each-slide" key={index}>
-                            <div style={{ 'backgroundImage': `url(${slideImage.url})`, 'height': "280px", 'borderRadius': "15px" }}>
-                            </div>
-                        </div>
+                        <Box className="each-slide" key={index}>
+                            <Image src={`${slideImage.url}`} height={{ lg: '200px', md: '200px', xs: "150px" }} />
+                        </Box>
                     ))}
                 </Slide>
             </div>
