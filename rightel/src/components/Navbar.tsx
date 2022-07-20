@@ -87,7 +87,7 @@ const DesktopNav = () => {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
-        <Stack direction={'row'} spacing={6}>
+        <Stack direction={'row'} spacing={{ lg: '6', md: '2' }}>
             {NAV_ITEMS.map((navItem) => (
                 <Box key={navItem.label}>
                     <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -95,7 +95,7 @@ const DesktopNav = () => {
                             <Link
                                 p={2}
                                 href={navItem.href ?? '#'}
-                                fontSize={'sm'}
+                                fontSize={{ lg: 'sm', md: 'xs' }}
                                 fontWeight={500}
                                 color={linkColor}
                                 rounded={'lg'}
@@ -194,6 +194,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
                     textDecoration: 'none',
                 }}>
                 <Text
+                    fontSize={'sm'}
                     fontWeight={500}
                     color={useColorModeValue('gray.600', 'gray.200')}>
                     {label}
@@ -220,7 +221,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
                     align={'start'}>
                     {children &&
                         children.map((child) => (
-                            <Link color={'pink.500'} key={child.label} py={2} href={child.href}>
+                            <Link fontSize={'xs'} color={'pink.500'} key={child.label} py={2} href={child.href}>
                                 {child.label}
                             </Link>
                         ))}

@@ -10,7 +10,7 @@ const Header = () => {
         <Flex mb={'2.5'} justifyContent={'space-between'}>
             <LogoHolder />
             <Box mt={'5'}>
-                <HStack spacing='24px'>
+                <HStack spacing={{lg:'24px',md:'24px',sm:'12px'}}>
                     <ToggleBtn />
                     <Divider />
                     <SearchInput />
