@@ -19,7 +19,6 @@ const HomePage = () => {
             <Suggestion />
             <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' />
             <MyRightel />
-
         </Container>
     );
 }
