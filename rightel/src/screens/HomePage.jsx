@@ -15,9 +15,9 @@ const HomePage = () => {
             <Navbar />
             <SlideShow />
             <Services />
-            <TextHeader mainTitle='پیشنهادات ویژه' subTitle='ویژه' detail='خدمات ارتباطی نوین' />
+            <TextHeader mainTitle='پیشنهادات ویژه' subTitle='ویژه' detail='خدمات ارتباطی نوین' setDivider={true} />
             <Suggestion />
-            <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' />
+            <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' setDivider={false} />
             <MyRightel />
         </Container>
     );
