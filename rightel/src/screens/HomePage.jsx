@@ -2,6 +2,7 @@ import { Container } from '@chakra-ui/react'
 import Header from "../components/Header";
 import MyRightel from '../components/MyRightel';
 import Navbar from '../components/Navbar.tsx';
+import RightelNews from '../components/RightelNews';
 import Services from '../components/Services';
 import SlideShow from '../components/SlideShow';
 import Suggestion from '../components/Suggestion';
@@ -19,6 +20,8 @@ const HomePage = () => {
             <Suggestion />
             <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' setDivider={false} />
             <MyRightel />
+            <TextHeader mainTitle='اخبار رایتل' subTitle='' detail='' setDivider={false} />
+            <RightelNews />
         </Container>
     );
 }
