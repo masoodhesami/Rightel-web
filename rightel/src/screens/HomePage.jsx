@@ -8,6 +8,7 @@ import SlideShow from '../components/SlideShow';
 import Suggestion from '../components/Suggestion';
 import TextHeader from '../components/TextHeader';
 import { useState } from 'react';
+import Footer from "../components/Footer.tsx"
 
 
 const HomePage = () => {
@@ -16,24 +17,27 @@ const HomePage = () => {
         setIsLoaded(true)
     }, 2000);
     return (
-        <Container maxW='container.xl' color='white'>
-            <Header />
-            <Navbar />
-            <Skeleton isLoaded={isLoaded}>
-                <SlideShow />
-            </Skeleton>
-            <Skeleton isLoaded={isLoaded}>
-                <Services />
-            </Skeleton>
-            <TextHeader mainTitle='پیشنهادات ویژه' subTitle='ویژه' detail='خدمات ارتباطی نوین' setDivider={true} />
-            <Suggestion />
-            <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' setDivider={false} />
-            <MyRightel />
-            <TextHeader mainTitle='اخبار رایتل' subTitle='' detail='' setDivider={false} />
-            <Skeleton isLoaded={isLoaded}>
-                <RightelNews />
-            </Skeleton>
-        </Container>
+        <>
+            <Container maxW='container.xl' color='white'>
+                <Header />
+                <Navbar />
+                <Skeleton isLoaded={isLoaded}>
+                    <SlideShow />
+                </Skeleton>
+                <Skeleton isLoaded={isLoaded}>
+                    <Services />
+                </Skeleton>
+                <TextHeader mainTitle='پیشنهادات ویژه' subTitle='ویژه' detail='خدمات ارتباطی نوین' setDivider={true} />
+                <Suggestion />
+                <TextHeader mainTitle='اپلیکیشن رایتل من' subTitle='' detail='' setDivider={false} />
+                <MyRightel />
+                <TextHeader mainTitle='اخبار رایتل' subTitle='' detail='' setDivider={false} />
+                <Skeleton isLoaded={isLoaded}>
+                    <RightelNews />
+                </Skeleton>
+            </Container>
+            <Footer />
+        </>
     );
 }
 
