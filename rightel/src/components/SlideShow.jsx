@@ -23,7 +23,7 @@ const slideImages = [
 
     },
     {
-        url: 'https://s25.picofile.com/file/8451674918/_1pDJfhdB.png',
+        url: 'https://s24.picofile.com/file/8451793850/slider3.png',
 
     }
 ];
