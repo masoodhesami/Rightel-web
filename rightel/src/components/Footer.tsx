@@ -13,9 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 
-// import AppStoreBadge from '@/components/AppStoreBadge';
-// import PlayStoreBadge from '@/components/PlayStoreBadge';
-
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
     <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
@@ -61,9 +58,9 @@ export default function LargeWithAppLinksAndSocial() {
       bg={'#312244'}
       color={'#B2AFAF'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid fontSize={{lg:'md',md:'md',sm:'sm'}} columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+        <SimpleGrid fontSize={{ lg: 'md', md: 'md', sm: 'sm' }} columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
-            <ListHeader><Text fontSize={{lg:'md',md:'md',sm:'sm'}} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>محصولات و خدمات</Text> </ListHeader>
+            <ListHeader><Text fontSize={{ lg: 'md', md: 'md', sm: 'sm' }} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>محصولات و خدمات</Text> </ListHeader>
             <Link href={'#'}>خرید بسته اینترنتی</Link>
             <Link href={'#'}>خرید شارژ</Link>
             <Link href={'#'}>کد‌های دستوری</Link>
@@ -73,7 +70,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader><Text fontSize={{lg:'md',md:'md',sm:'sm'}} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>دسترسی کوتاه</Text> </ListHeader>
+            <ListHeader><Text fontSize={{ lg: 'md', md: 'md', sm: 'sm' }} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>دسترسی کوتاه</Text> </ListHeader>
             <Link href={'#'}>خرید بسته اینترنتی</Link>
             <Link href={'#'}>خرید شارژ</Link>
             <Link href={'#'}>کد‌های دستوری</Link>
@@ -82,7 +79,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader><Text fontSize={{lg:'md',md:'md',sm:'sm'}} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>درگاه‌های مرتبط</Text> </ListHeader>
+            <ListHeader><Text fontSize={{ lg: 'md', md: 'md', sm: 'sm' }} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>درگاه‌های مرتبط</Text> </ListHeader>
             <Link href={'#'}>خرید بسته اینترنتی</Link>
             <Link href={'#'}>خرید شارژ</Link>
             <Link href={'#'}>کد‌های دستوری</Link>
@@ -90,7 +87,7 @@ export default function LargeWithAppLinksAndSocial() {
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader><Text fontSize={{lg:'md',md:'md',sm:'sm'}} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>تماس با ما</Text> </ListHeader>
+            <ListHeader><Text fontSize={{ lg: 'md', md: 'md', sm: 'sm' }} color={'#D9D6D6'} borderBottom={'2px'} borderBottomColor='#EA7C16'>تماس با ما</Text> </ListHeader>
             <Link href={'#'}>خرید و ثبت نام سیم‌کارت</Link>
             <Link href={'#'}>تبدیل سیم‌کارت</Link>
             <Link href={'#'}>تعرفه‌ها</Link>
@@ -102,7 +99,7 @@ export default function LargeWithAppLinksAndSocial() {
         borderTopWidth={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.700')}>
-        <Container fontSize={{lg:'md',md:'md',sm:'xs'}}
+        <Container fontSize={{ lg: 'md', md: 'md', sm: 'xs' }}
           as={Stack}
           maxW={'6xl'}
           py={4}
